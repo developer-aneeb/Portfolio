@@ -1,12 +1,14 @@
 # ANEEB UR REHMAN — Full Stack AI Engineer 👨‍💻✨
 
-Production-ready personal portfolio website built with React + Vite + TypeScript. Clear, recruiter-friendly, and focused on product engineering.
+![React](https://img.shields.io/badge/React-Frontend-blue?logo=react) ![TypeScript](https://img.shields.io/badge/TypeScript-TypeSafe-blue?logo=typescript) ![Vite](https://img.shields.io/badge/Vite-Build-purple?logo=vite) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Styling-38BDF8?logo=tailwindcss) ![Framer Motion](https://img.shields.io/badge/FramerMotion-Animations-black?logo=framer) ![Vercel](https://img.shields.io/badge/Vercel-Deployment-black?logo=vercel)
+
+Production-ready AI engineer portfolio built to showcase intelligent systems, full-stack engineering, and modern product development.
 
 ---
 
 ## 🌐 Live Demo
 
-🚀 Portfolio Website: [Live Demo — update this after deploy](https://portfolio.vercel.app)
+🚀 Portfolio Website: [View Live Portfolio](https://portfolio-six-nu-20.vercel.app/)
 
 ---
 
@@ -57,22 +59,11 @@ Tip: Update `Projects.tsx` `demo` and `github` fields so the project buttons lin
 ---
 
 ## Customization (for maintainers)
+## Final notes
 
-To adapt the site:
+This README is tailored for a portfolio website repository: concise, visual, and focused on the site content and customization. If you want additional repo tooling (CI, preview deploys, editor-friendly content files), I can add a lightweight GitHub Actions workflow and a `src/data/` JSON for non-technical editors.
 
-- Replace hero text and CTA in `Hero.tsx`.
-- Update the narrative copy in `About.tsx`.
-- Modify the `projects` array in `Projects.tsx` to add/remove project cards.
-- Swap images in `src/assets/` (profile, screenshots, mockups).
-- Tweak design tokens in `tailwind.config.mjs` and `src/styles/`.
-
-Files to check for quick branding updates:
-
-- `src/app/components/Hero.tsx`
-- `src/app/components/About.tsx`
-- `src/app/components/Projects.tsx`
-- `src/app/components/Contact.tsx`
-- `src/assets/profile.jpeg` (replace with your headshot)
+Made for recruiters and technical leads — clear, credible, and production-oriented.
 
 ---
 
@@ -120,20 +111,15 @@ Checklist before deploying:
 
 ---
 
-## Featured projects (short)
+## Screenshots / Preview (replace with real assets)
 
-- RXEASE — AI-Powered Prescription Interpretation App — production-focused product that combines image preprocessing, segmentation, and OCR extraction to deliver structured prescription data. (Showcase link in `Projects.tsx`)
-- StoneFusionHub — Full-Stack Marketplace Platform — a scalable marketplace with realtime inventory and AI-enhanced recommendations. (Showcase link in `Projects.tsx`)
+Replace placeholder images in `src/assets/` with the following recommended files:
 
-Keep project cards concise: problem → approach → impact. Link to deep-dive repos for any ML/model artifacts.
+- `src/assets/hero-screenshot.png` — Desktop hero section (1920×1080 recommended)
+- `src/assets/projects-screenshot.png` — Projects grid (1200×800 recommended)
+- `src/assets/mobile-screenshot.png` — Mobile view (375×812 recommended)
 
----
-
-## Design & UX notes (concise)
-
-- Dark, futuristic theme with glassmorphism surfaces.
-- Motion used for focus and affordances; reduced-motion preference respected.
-- Responsive-first layout with consistent spacing and type scale via Tailwind tokens.
+Add these images and commit them to improve the repo's presentation.
 
 ---
 
@@ -141,17 +127,12 @@ Keep project cards concise: problem → approach → impact. Link to deep-dive r
 
 **ANEEB UR REHMAN — Full Stack AI Engineer**  
 Email: dev.aneeb.rehman@gmail.com  
-GitHub:https://github.com/developer-aneeb
-LinkedIn: https://www.linkedin.com/in/aneeb-ur-rehman-528a50299/
+GitHub: https://github.com/<your-handle>  
+LinkedIn: https://www.linkedin.com/in/<your-handle>
 
+Replace placeholders with live links.
 
 ---
-
-## Final notes
-
-This README is tailored for a portfolio website repository: concise, visual, and focused on the site content and customization. If you want additional repo tooling (CI, preview deploys, editor-friendly content files), I can add a lightweight GitHub Actions workflow and a `src/data/` JSON for non-technical editors.
-
-Made for recruiters and technical leads — clear, credible, and production-oriented.
   Prereqs: Node 18+, npm
 
   ```bash
