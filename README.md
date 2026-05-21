@@ -2,161 +2,161 @@
   # ANEEB UR REHMAN — Full Stack AI Engineer 👨‍💻✨
 
   Futuristic Full Stack AI Engineer Portfolio — Production-ready personal brand website for AI systems engineering.
+# ANEEB UR REHMAN — Full Stack AI Engineer 👨‍💻✨
 
-  ---
+Production-ready personal portfolio website built with React + Vite + TypeScript. Clear, recruiter-friendly, and focused on product engineering.
 
-  ## Project Overview
+---
 
-  This repository is a premium, production-focused portfolio website that presents the engineering identity of **ANEEB UR REHMAN** — *Full Stack AI Engineer*. The site is designed to showcase real-world systems engineering: OCR and YOLO pipelines, model integration, scalable web backends, and polished frontend experiences with a dark, futuristic aesthetic and glassmorphism UI.
+## 🌐 Live Demo
 
-  Why this exists:
-  - Personal branding that reads like a product-engineering portfolio (not an academic résumé).
-  - A living demonstration of full-stack, AI, and deployment capabilities.
-  - Clear signal to recruiters, clients, and partners that the author ships production systems — not demos.
+🚀 Portfolio Website: [Live Demo — update this after deploy](https://your-domain.example)
 
-  What it demonstrates:
-  - System-level AI engineering (data collection, preprocessing, model training, inference, validation).
-  - Production web engineering (frontend, backend, APIs, DB, deployment).
-  - Product thinking and research-driven development (real-world constraints, robustness, scale).
+---
 
-  ---
+## One-line summary
 
-  ## Portfolio Goals
+- I build AI-powered products and full-stack systems that turn raw data into production features. This repository is the website source that showcases those projects and the engineering work behind them.
 
-  - Showcase production-ready AI systems instead of toy projects.
-  - Demonstrate full-stack capabilities: frontend, backend, data, models, and deployment.
-  - Communicate engineering process: data → model → API → product.
-  - Build recruiter and client trust with clear project stories and technical depth.
-  - Maintain a consistent, premium visual identity and UX.
+---
 
-  ---
+## Key facts (quick)
 
-  ## Features
+- Frontend: React + Vite + TypeScript
+- Styling: Tailwind CSS
+- Animations: Framer Motion
+- Edit content in: `src/app/components/` (Hero.tsx, About.tsx, Projects.tsx, Contact.tsx)
+- Contact: `dev.aneeb.rehman@gmail.com`
 
-  - Dark, futuristic theme with subtle glassmorphism and premium spacing.
-  - Responsive layout and mobile-first behavior.
-  - Animated sections driven by motion primitives (smooth entrance/scroll animations).
-  - Interactive UI components (buttons, modals, project cards, form).
-  - Polished featured-project cards with hover states, badges, and CTA buttons.
-  - Dedicated Research / AI Work section for technical depth (OCR pipelines, dataset work).
-  - Contact section with a professional CTA and working contact form.
-  - Performance-conscious asset handling and lazy-loaded components.
-  - SEO-friendly structure and fast-first paint focus.
+---
 
-  Key highlights:
-  - Modern UI: Tailwind + design tokens for spacing/typography.
-  - Motion system: orchestrated animated entrances and hover effects.
-  - Premium project storytelling with problem → approach → impact structure.
+## Scope & purpose (repo-specific)
 
-  ---
+- This repository contains the portfolio website source only — the code you deploy to present projects, case studies, and professional contact information.
+- It does not include full ML training code, large datasets, or model checkpoints. If a project requires deep ML artifacts, link to a dedicated project repo for those materials.
 
-  ## Tech Stack
+---
 
-  Badges
-  [![React](https://img.shields.io/badge/React-17.x-blue?logo=react)](https://reactjs.org)  
-  [![Next.js](https://img.shields.io/badge/Next.js-13-black?logo=next.js)](https://nextjs.org)  
-  [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org)  
-  [![Tailwind](https://img.shields.io/badge/TailwindCSS-3.x-teal?logo=tailwindcss)](https://tailwindcss.com)  
-  [![Node.js](https://img.shields.io/badge/Node.js-18.x-green?logo=node.js)](https://nodejs.org)  
-  [![Python](https://img.shields.io/badge/Python-3.x-yellow?logo=python)](https://www.python.org)  
-  [![FastAPI](https://img.shields.io/badge/FastAPI-0.95-lightblue?logo=fastapi)](https://fastapi.tiangolo.com/)  
-  [![Supabase](https://img.shields.io/badge/Supabase-1.x-6cc24a?logo=supabase)](https://supabase.com)  
-  [![Postgres](https://img.shields.io/badge/PostgreSQL-14.0-blue?logo=postgresql)](https://www.postgresql.org)  
-  [![Vercel](https://img.shields.io/badge/Vercel-deploy-black?logo=vercel)](https://vercel.com)  
-  [![YOLO / OCR](https://img.shields.io/badge/YOLO--OCR-models-orange)](https://github.com/AlexeyAB/darknet)
+## Screenshots / Preview (replace with real assets)
 
-  Why this stack:
-  - Scalability: modular Node/Python services, PostgreSQL for relational scale, Supabase for realtime primitives.
-  - Maintainability: TypeScript across frontend, clear folder separation, typed contracts for APIs.
-  - Performance: Vite/Next builds, edge-friendly deployment, progressive enhancement for animations and assets.
-  - Developer productivity: modern DX with Tailwind, Framer Motion, TypeScript, and a small set of battle-tested services.
+Add high-quality screenshots to `src/assets/` and reference them here. Recruiters prefer visual proof.
 
-  ---
+| Desktop (Hero) | Projects | Mobile |
+|---:|:---:|:---:|
+| ![Hero](src/assets/hero-screenshot.png) | ![Projects](src/assets/projects-screenshot.png) | ![Mobile](src/assets/mobile-screenshot.png) |
 
-  ## Architecture & Development Workflow
+---
 
-  High-level architecture:
-  - Frontend (React + Vite/Next.js): component-driven UI, Tailwind-based tokens, motion orchestration via Framer Motion.
-  - Backend (Node / Python): lightweight API services (Express or FastAPI) for model inference, auth, and data workflows.
-  - Data & DB: PostgreSQL for transactional data, Supabase for realtime functionality, object storage for assets and annotated datasets.
-  - AI components: Python services for preprocessing, YOLO segmentation, OCR pipeline orchestration, model training and validation.
+## Where to edit content (quick paths)
 
-  Developer workflow (senior-engineer focused):
-  1. Feature branch: small, scoped branches with feature flags for new AI integrations.
-  2. Modular services: each API and model runner isolated in its own folder and Dockerfile.
-  3. Contract-first APIs: TypeScript clients generated from OpenAPI where possible.
-  4. Deploy: Vercel for frontend, Render/Vercel/Cloud Run for backend, scheduled training jobs in managed compute for models.
+- Hero / headline: `src/app/components/Hero.tsx`
+- About / bio: `src/app/components/About.tsx`
+- Projects list & cards: `src/app/components/Projects.tsx` (array of project objects)
+- Contact form and CTA: `src/app/components/Contact.tsx`
+- Images & screenshots: `src/assets/`
+- Global styles & tokens (Tailwind): `tailwind.config.mjs`, `src/styles/`
 
-  # ANEEB UR REHMAN — Full Stack AI Engineer 👨‍💻✨
+Tip: Update `Projects.tsx` `demo` and `github` fields so the project buttons link to live demos and GitHub.
 
-  Production-ready personal brand website built with React + Vite + TypeScript, showcasing professional projects, engineering process, and a premium dark-futuristic design.
+---
 
-  ---
+## Customization (for maintainers)
 
-  ## Quick Summary
+To adapt the site:
 
-  - Purpose: a professional portfolio website for ANEEB UR REHMAN that highlights production systems, full-stack engineering, and product-focused AI work.
-  - Stack: React, Vite, TypeScript, Tailwind CSS, Framer Motion.
-  - Edit content in: `src/app/components/` (Hero.tsx, About.tsx, Projects.tsx, Contact.tsx).
-  - Contact: `dev.aneeb.rehman@gmail.com`
+- Replace hero text and CTA in `Hero.tsx`.
+- Update the narrative copy in `About.tsx`.
+- Modify the `projects` array in `Projects.tsx` to add/remove project cards.
+- Swap images in `src/assets/` (profile, screenshots, mockups).
+- Tweak design tokens in `tailwind.config.mjs` and `src/styles/`.
 
-  ---
+Files to check for quick branding updates:
 
-  ## What this repo is (and is not)
+- `src/app/components/Hero.tsx`
+- `src/app/components/About.tsx`
+- `src/app/components/Projects.tsx`
+- `src/app/components/Contact.tsx`
+- `src/assets/profile.jpeg` (replace with your headshot)
 
-  - This repository is the website source — a polished, responsive frontend with a content-driven structure designed to present an engineer's portfolio.
-  - It is not an ML project repo (no dataset/model training instructions belong here). If you include ML case studies, link to dedicated repos for data and model details.
+---
 
-  ---
+## Development (local)
 
-  ## Where to edit content (fast edits)
+Prereqs: Node 18+, npm
 
-  - Hero text and tagline: `src/app/components/Hero.tsx`
-  - About / bio: `src/app/components/About.tsx`
-  - Projects data & cards: `src/app/components/Projects.tsx` (array of project objects)
-  - Contact settings / form: `src/app/components/Contact.tsx`
-  - Profile image & assets: `src/assets/` (replace `profile.jpeg`)
-  - Global styles & tokens: `src/styles/` and `postcss.config.mjs` / `tailwind.config.mjs`
+```bash
+# Install
+npm install
 
-  Tip: Projects are defined in `Projects.tsx` as an array (title, description, tech, demo, github). Update the `demo` and `github` fields to point to live demos and repos.
+# Start dev server
+npm run dev
 
-  ---
+# Build
+npm run build
 
-  ## Live demo & screenshots
+# Preview
+npm run preview
+```
 
-  Add your deployed link here (replace placeholder once deployed):
+Notes:
+- This repository uses Vite for a fast development loop. TypeScript is enabled across the front-end.
 
-  - Live site: https://your-domain.example (update in README after deploying)
+---
 
-  Screenshots (add images to `src/assets/` and reference them below):
+## Deployment (recommended)
 
-  ![Hero screenshot](src/assets/hero-screenshot.png)
-  ![Projects screenshot](src/assets/projects-screenshot.png)
+Frontend: deploy on Vercel (recommended) or Netlify. Connect your GitHub repo and set build command to `npm run build`.
 
-  Include real demo URLs in `src/app/components/Projects.tsx` so CTA buttons link to live demos and GitHub.
+Checklist before deploying:
 
-  ---
+1. Update `Projects.tsx` with real `demo` and `github` links.
+2. Add screenshots to `src/assets/` and reference them in this README.
+3. Set environment variables (if you integrate a contact endpoint or other services).
 
-  ## How to customize content (step-by-step)
+---
 
-  1. Hero
-     - Open `src/app/components/Hero.tsx` and update the headline, subheadline, and CTA text.
-  2. About
-     - Edit `src/app/components/About.tsx` for your professional summary. Keep it concise and product-focused.
-  3. Projects
-     - In `src/app/components/Projects.tsx` update the `projects` array:
-       - `title`, `description`, `tech` (array), `demo` (URL), `github` (URL).
-  4. Contact
-     - Replace the email and links in `src/app/components/Contact.tsx`. The form posts to a local endpoint or third-party service — check the component for integration notes.
-  5. Images
-     - Replace `src/assets/profile.jpeg` and any screenshot placeholders.
-  6. Styling
-     - Global tokens live in `src/styles/` and Tailwind config (`tailwind.config.mjs`). Adjust scales or colors via CSS variables or Tailwind theme overrides.
+## Tech stack (accurate for this repo)
 
-  ---
+- Frontend: React + Vite + TypeScript
+- Styling: Tailwind CSS
+- Animations: Framer Motion
+- Optional backend: minimal Node/Python endpoints (if you add contact form handling)
 
-  ## Development (local)
+---
 
+## Featured projects (short)
+
+- RXEASE — AI-Powered Prescription Interpretation App — production-focused product that combines image preprocessing, segmentation, and OCR extraction to deliver structured prescription data. (Showcase link in `Projects.tsx`)
+- StoneFusionHub — Full-Stack Marketplace Platform — a scalable marketplace with realtime inventory and AI-enhanced recommendations. (Showcase link in `Projects.tsx`)
+
+Keep project cards concise: problem → approach → impact. Link to deep-dive repos for any ML/model artifacts.
+
+---
+
+## Design & UX notes (concise)
+
+- Dark, futuristic theme with glassmorphism surfaces.
+- Motion used for focus and affordances; reduced-motion preference respected.
+- Responsive-first layout with consistent spacing and type scale via Tailwind tokens.
+
+---
+
+## Contact
+
+**ANEEB UR REHMAN — Full Stack AI Engineer**  
+Email: dev.aneeb.rehman@gmail.com  
+GitHub: https://github.com/<your-handle>  
+LinkedIn: https://www.linkedin.com/in/<your-handle>
+
+Replace placeholders with live links.
+
+---
+
+## Final notes
+
+This README is tailored for a portfolio website repository: concise, visual, and focused on the site content and customization. If you want additional repo tooling (CI, preview deploys, editor-friendly content files), I can add a lightweight GitHub Actions workflow and a `src/data/` JSON for non-technical editors.
+
+Made for recruiters and technical leads — clear, credible, and production-oriented.
   Prereqs: Node 18+, npm
 
   ```bash
@@ -246,5 +246,3 @@
   - or generate a short 'how to update content' guide inside the `src/data/` folder for non-technical editors.
 
   ---
-
-  Made to present production-quality projects and engineering workflows — concise, recruiter-friendly, and developer-ready.
