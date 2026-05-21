@@ -57,7 +57,6 @@
   [![Next.js](https://img.shields.io/badge/Next.js-13-black?logo=next.js)](https://nextjs.org)  
   [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org)  
   [![Tailwind](https://img.shields.io/badge/TailwindCSS-3.x-teal?logo=tailwindcss)](https://tailwindcss.com)  
-  [![Framer Motion](https://img.shields.io/badge/Framer--Motion-6.0-purple?logo=framer)](https://www.framer.com/motion/)  
   [![Node.js](https://img.shields.io/badge/Node.js-18.x-green?logo=node.js)](https://nodejs.org)  
   [![Python](https://img.shields.io/badge/Python-3.x-yellow?logo=python)](https://www.python.org)  
   [![FastAPI](https://img.shields.io/badge/FastAPI-0.95-lightblue?logo=fastapi)](https://fastapi.tiangolo.com/)  
@@ -88,177 +87,164 @@
   3. Contract-first APIs: TypeScript clients generated from OpenAPI where possible.
   4. Deploy: Vercel for frontend, Render/Vercel/Cloud Run for backend, scheduled training jobs in managed compute for models.
 
-  Performance & scalability considerations:
-  - Critical-path rendering prioritized; non-critical animation deferred.
-  - Model inference offloaded to managed instances and isolated service queue.
-  - DB indexing and query planning for production-grade datasets.
-  - CDN + caching + incremental static rendering (where appropriate) for global scale.
+  # ANEEB UR REHMAN — Full Stack AI Engineer 👨‍💻✨
+
+  Production-ready personal brand website built with React + Vite + TypeScript, showcasing professional projects, engineering process, and a premium dark-futuristic design.
 
   ---
 
-  ## Portfolio Sections — Purpose & Flow
+  ## Quick Summary
 
-  - Hero Section
-    - Purpose: immediate positioning — name, title, one-line value proposition.
-    - Contribution: strong first impression and clear call-to-action.
-
-  - About
-    - Purpose: technical summary, engineering approach, impact-focused statement.
-    - Contribution: recruiter trust through concise product/engineering positioning.
-
-  - Skills / Tech Stack
-    - Purpose: concise technical competency map grouped by domain.
-    - Contribution: rapid triage for recruiters and technical peers.
-
-  - Featured Projects
-    - Purpose: deep, production-first case studies (problem → approach → outcome).
-    - Contribution: demonstrates system thinking and execution ability.
-
-  - Research / AI Work
-    - Purpose: technical depth on OCR, dataset creation, model validation, inference pipelines.
-    - Contribution: establishes credibility for AI systems engineering.
-
-  - Workflow / Process
-    - Purpose: reveal engineering processes: CI, testing, deployment, observability.
-    - Contribution: shows you build sustainable, maintainable systems.
-
-  - Contact
-    - Purpose: clear CTA to work together; email and social links; working contact form.
-    - Contribution: reduces friction for hiring and client outreach.
-
-  - Footer
-    - Purpose: concise identity, social links, minimal closing signature.
+  - Purpose: a professional portfolio website for ANEEB UR REHMAN that highlights production systems, full-stack engineering, and product-focused AI work.
+  - Stack: React, Vite, TypeScript, Tailwind CSS, Framer Motion.
+  - Edit content in: `src/app/components/` (Hero.tsx, About.tsx, Projects.tsx, Contact.tsx).
+  - Contact: `dev.aneeb.rehman@gmail.com`
 
   ---
 
-  ## Featured Projects — (How they demonstrate production maturity)
+  ## What this repo is (and is not)
 
-  1) **RXEASE — AI-Powered Prescription Interpretation App**
-  - Problem: unstructured handwritten prescriptions are error-prone and hard to digitize.
-  - Solution: a production pipeline combining image preprocessing, YOLO-powered segmentation, OCR extraction, and medical validation logic.
-  - Production features: role-based access, prescription history dashboard, secure sharing/export, reminders & notifications.
-  - Tech highlight: React frontend, FastAPI & Python inference service, YOLO segmentation, Supabase for user and data sync.
-  - Impact: accurate extraction paths, validated structured medical data, improved downstream workflows for clinics/pharmacies.
-
-  2) **StoneFusionHub — Full-Stack Marketplace Platform**
-  - Problem: fragmented materials supply and poor inventory synchronicity for construction suppliers.
-  - Solution: multi-role marketplace, AI recommendations, and real-time inventory workflows with optimized indexing for scale.
-  - Production features: shopkeeper & admin dashboards, order management, delivery tracking, advanced filtering & search.
-  - Tech highlight: Next.js, Supabase realtime, PostgreSQL, optimized backend indices and caching.
-  - Impact: improved UX for procurement workflows, AI-based product ranking, and scalable transactional architecture.
-
-  Why the presentation matters:
-  - Cards show problem → technical approach → impact.
-  - Badges and short tech stacks communicate implementation depth quickly.
-  - Demo / GitHub links provide evidence of execution.
+  - This repository is the website source — a polished, responsive frontend with a content-driven structure designed to present an engineer's portfolio.
+  - It is not an ML project repo (no dataset/model training instructions belong here). If you include ML case studies, link to dedicated repos for data and model details.
 
   ---
 
-  ## UI / UX Engineering Notes
+  ## Where to edit content (fast edits)
 
-  Design philosophy
-  - Glassmorphism: layered translucent surfaces using subtle backdrop-filter + soft borders to convey depth.
-  - Dark, futuristic theme: high-contrast accent gradients, restrained color palette for accessibility and focus.
-  - Motion strategy: entrance/hover microinteractions to communicate affordances without distraction.
-  - Spacing & typography: modular scale for consistent rhythm and readable hierarchy.
+  - Hero text and tagline: `src/app/components/Hero.tsx`
+  - About / bio: `src/app/components/About.tsx`
+  - Projects data & cards: `src/app/components/Projects.tsx` (array of project objects)
+  - Contact settings / form: `src/app/components/Contact.tsx`
+  - Profile image & assets: `src/assets/` (replace `profile.jpeg`)
+  - Global styles & tokens: `src/styles/` and `postcss.config.mjs` / `tailwind.config.mjs`
 
-  Accessibility & performance
-  - Color contrast maintained for text and interactive elements.
-  - Reduced-motion variant respected for users who prefer minimal animation.
-  - Keyboard navigable interactive components and semantic HTML structure.
-
-  Implementation details
-  - Tailwind tokens (spacing, color) central for consistency.
-  - Animations orchestrated using Framer Motion variants; animation work done via composition to avoid re-renders.
-  - Components are small, composable, and documented via inline JSDoc / TSDoc.
+  Tip: Projects are defined in `Projects.tsx` as an array (title, description, tech, demo, github). Update the `demo` and `github` fields to point to live demos and repos.
 
   ---
 
-  ## Performance & Optimization
+  ## Live demo & screenshots
 
-  - Lazy-load non-critical sections (images, large project media).
-  - Use optimized image formats (WebP/AVIF) and responsive images for multiple DPRs.
-  - Keep animation loops GPU-friendly (opacity, transform) and avoid layout thrashing.
-  - Reusable components reduce bundle duplication; tree-shaking favored.
-  - TypeScript + ESLint + Prettier for maintainable codebase.
-  - Progressive enhancement: meaningful content remains when JS is slow.
+  Add your deployed link here (replace placeholder once deployed):
 
-  ---
+  - Live site: https://your-domain.example (update in README after deploying)
 
-  ## Responsible Engineering & Design Philosophy
+  Screenshots (add images to `src/assets/` and reference them below):
 
-  - Scalable architecture: modular services and clear separation of concerns (UI, API, model runner).
-  - Maintainable code: small components, typed contracts, testable units, and clear folder boundaries.
-  - User-focused design: product-first copy, clear CTAs, and real-world use-case emphasis.
-  - Production-readiness: observability hooks, rate-limiting strategy for inference, and robust error handling.
-  - Sustainable development: incremental improvements, documented APIs, and automation for reproducibility.
+  ![Hero screenshot](src/assets/hero-screenshot.png)
+  ![Projects screenshot](src/assets/projects-screenshot.png)
+
+  Include real demo URLs in `src/app/components/Projects.tsx` so CTA buttons link to live demos and GitHub.
 
   ---
 
-  ## Installation & Local Development
+  ## How to customize content (step-by-step)
 
-  Quick start (developer-focused)
+  1. Hero
+     - Open `src/app/components/Hero.tsx` and update the headline, subheadline, and CTA text.
+  2. About
+     - Edit `src/app/components/About.tsx` for your professional summary. Keep it concise and product-focused.
+  3. Projects
+     - In `src/app/components/Projects.tsx` update the `projects` array:
+       - `title`, `description`, `tech` (array), `demo` (URL), `github` (URL).
+  4. Contact
+     - Replace the email and links in `src/app/components/Contact.tsx`. The form posts to a local endpoint or third-party service — check the component for integration notes.
+  5. Images
+     - Replace `src/assets/profile.jpeg` and any screenshot placeholders.
+  6. Styling
+     - Global tokens live in `src/styles/` and Tailwind config (`tailwind.config.mjs`). Adjust scales or colors via CSS variables or Tailwind theme overrides.
 
+  ---
+
+  ## Development (local)
+
+  Prereqs: Node 18+, npm
+
+  ```bash
   # Install
   npm install
 
-  # Development
+  # Start dev server
   npm run dev
 
-  # Build for production
+  # Build
   npm run build
 
-  # Preview production build (if available)
+  # Preview
   npm run preview
   ```
 
   Notes:
-  - The repository is set up for modern frontend development (Vite/Next + TypeScript + Tailwind).
-  - Use a node 18+ runtime. Python components (AI pipelines) run in isolated virtualenvs as described in `ai/README.md` if present.
+  - The site is built with Vite for a fast dev loop. The project uses TypeScript and Tailwind CSS.
+  - If you add backend endpoints (contact form), run those services separately and update `Contact.tsx` with the endpoint URL.
 
   ---
 
-  ## Deployment
+  ## Deployment (recommended)
 
-  Recommended production flow
-  - Frontend: Deploy on Vercel with automatic builds from `main` branch.
-  - Backend/Inference: Deploy Python/Node services on Render. Use private endpoints or authenticated serverless functions for inference.
-  - Database: Managed Supabase, with connection strings in secure environment variables.
+  1. Frontend: Vercel (recommended) or Netlify. Connect the GitHub repo and set the build command to `npm run build`.
+  2. Environment variables: add any API endpoints or keys in the deployment dashboard (do not commit secrets).
+  3. Optional backend: host with Render, Cloud Run, or a managed service. Keep inference/model services private and authenticated.
 
-  ---
-
-  ## Future Improvements
-
-  Planned/optional enhancements:
-  - Integrated AI chatbot demo (in-browser assistant powered by trimmed models).
-  - Interactive project demos (playground for OCR examples).
-  - Blog / case studies for deep-dives and postmortems.
-  - Multilingual experience and accessibility audit.
-  - Analytics dashboard showing model performance & user engagement.
-  - On-demand inference playground with quotas and authentication.
+  Quick Vercel steps:
+  ```text
+  - Create a Vercel project and connect your repository
+  - Set build command: npm run build
+  - Set output directory (if asked): dist or leave as default for Vite
+  - Add environment variables in Vercel dashboard
+  - Deploy
+  ```
 
   ---
 
-  ## How Projects Are Documented (Recommended Template)
+  ## Design & Content Guidelines (branding)
 
-  For each featured project:
-  - Title & one-line summary
-  - Problem statement (why it matters)
-  - Technical approach (stack, architecture, model details)
-  - Key engineering highlights (scalability, Observability, CI/CD)
-  - Live demo / Screenshots / GitHub link
-  - Measurable outcomes (latency, accuracy, savings)
-
-  This structure ensures each card on the site reads like a mini case study.
+  - Keep copy product-focused and concise.
+  - Project cards should use the 'problem → approach → impact' format.
+  - Maintain consistent spacing and typography via Tailwind tokens.
+  - Prefer screenshots and live links over long model or dataset descriptions in this repo.
 
   ---
 
-  ## Contact & Brand
+  ## Screenshots & Live Link Checklist (before sharing)
+
+  1. Update `Projects.tsx` with `demo` and `github` links.
+  2. Replace placeholder images in `src/assets/` with real screenshots.
+  3. Update the Live site link above with your Vercel/Netlify URL.
+
+  ---
+
+  ## Tech stack (accurate for this repo)
+
+  - Frontend: React + Vite + TypeScript
+  - Styling: Tailwind CSS
+  - Animations: Framer Motion
+  - Optional backend: Node.js or Python (FastAPI) for APIs and contact endpoints
+
+  ---
+
+  ## Contributing & Notes
+
+  - This repo is structured for a single-author portfolio. Contributions are welcome if they improve layout, accessibility, or performance.
+  - Use branches for content updates and open a PR for major layout changes.
+
+  ---
+
+  ## Contact
 
   **ANEEB UR REHMAN — Full Stack AI Engineer**  
-  Let’s build intelligent products that solve real problems.
+  Email: dev.aneeb.rehman@gmail.com  
+  GitHub: https://github.com/<your-handle>  
+  LinkedIn: https://www.linkedin.com/in/<your-handle>
 
-  Email: dev.aneeb.rehmman@gmail.com  
-  GitHub: https://github.com/developer-aneeb
-  LinkedIn: https://www.linkedin.com/in/aneeb-ur-rehman-528a50299/
-  
+  Replace `<your-handle>` with real profile links in the README after publishing.
+
+  ---
+
+  If you'd like, I can also:
+  - wire up GitHub Actions for lint/type checks and preview deploys,
+  - add a ready-to-use Vercel configuration,
+  - or generate a short 'how to update content' guide inside the `src/data/` folder for non-technical editors.
+
+  ---
+
+  Made to present production-quality projects and engineering workflows — concise, recruiter-friendly, and developer-ready.
