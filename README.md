@@ -1,7 +1,3 @@
-
-  # ANEEB UR REHMAN — Full Stack AI Engineer 👨‍💻✨
-
-  Futuristic Full Stack AI Engineer Portfolio — Production-ready personal brand website for AI systems engineering.
 # ANEEB UR REHMAN — Full Stack AI Engineer 👨‍💻✨
 
 Production-ready personal portfolio website built with React + Vite + TypeScript. Clear, recruiter-friendly, and focused on product engineering.
@@ -10,7 +6,7 @@ Production-ready personal portfolio website built with React + Vite + TypeScript
 
 ## 🌐 Live Demo
 
-🚀 Portfolio Website: [Live Demo — update this after deploy](https://your-domain.example)
+🚀 Portfolio Website: [Live Demo — update this after deploy](https://portfolio.vercel.app)
 
 ---
 
@@ -145,10 +141,9 @@ Keep project cards concise: problem → approach → impact. Link to deep-dive r
 
 **ANEEB UR REHMAN — Full Stack AI Engineer**  
 Email: dev.aneeb.rehman@gmail.com  
-GitHub: https://github.com/<your-handle>  
-LinkedIn: https://www.linkedin.com/in/<your-handle>
+GitHub:https://github.com/developer-aneeb
+LinkedIn: https://www.linkedin.com/in/aneeb-ur-rehman-528a50299/
 
-Replace placeholders with live links.
 
 ---
 
