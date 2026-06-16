@@ -5,20 +5,12 @@ import { Briefcase, Cpu } from 'lucide-react';
 export function Experience() {
   const experiences = [
     {
-      title: "OCR Pipeline Engineering",
-      company: "Production AI Systems",
-      period: "Current Focus",
-      description: "Building end-to-end OCR pipelines with preprocessing, segmentation, extraction, and validation to deliver structured outputs that are ready for real-world use.",
+      title: "AI/ML Engineering Intern",
+      company: "DevelopersHub Corporation",
+      period: "Apr 2026 - Jun 2026",
+      description: "Developed practical AI applications in healthcare, analytics, and NLP. Built solutions including BERT-based text classification, contextual chatbots, and LLM-powered applications.",
       icon: Cpu,
-      skills: ["Image Preprocessing", "YOLO Segmentation", "OCR Extraction", "Validation Logic"]
-    },
-    {
-      title: "Full-Stack Product Engineering",
-      company: "AI-Powered Platforms",
-      period: "Recent Focus",
-      description: "Shipping full-stack products that integrate AI workflows into scalable web systems with dashboards, role-based access, and production deployment.",
-      icon: Briefcase,
-      skills: ["Full-Stack Architecture", "API Integration", "Role-Based Access", "Deployment"]
+      skills: ["Machine Learning", "NLP", "Data Preprocessing", "Feature Engineering"]
     }
   ];
 
