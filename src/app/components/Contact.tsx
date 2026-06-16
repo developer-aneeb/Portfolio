@@ -147,7 +147,7 @@ export function Contact() {
               <h3 className="text-xl font-bold text-white text-center mb-6">Connect With Me</h3>
               <div className="space-y-3">
                 {[
-                  { icon: Mail, label: "dev.aneeb.rehmman@gmail.com", href: "mailto:dev.aneeb.rehmman@gmail.com", color: "from-red-400 to-pink-400" },
+                  { icon: Mail, label: "dev.aneeb.rehman@gmail.com", href: "mailto:dev.aneeb.rehman@gmail.com", color: "from-red-400 to-pink-400" },
                   { icon: Github, label: "GitHub Profile", href: "https://github.com/developer-aneeb", color: "from-gray-400 to-gray-600" },
                   { icon: Linkedin, label: "LinkedIn Profile", href: "https://www.linkedin.com/in/aneeb-ur-rehman-528a50299/", color: "from-blue-400 to-blue-600" }
                 ].map((social, index) => (
@@ -188,7 +188,7 @@ export function Contact() {
             © 2026 ANEEB UR REHMAN. Full Stack AI Engineer.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 mt-4 text-sm text-gray-400">
-            <a href="mailto:dev.aneeb.rehmman@gmail.com" className="hover:text-blue-300 transition-colors">
+            <a href="mailto:dev.aneeb.rehman@gmail.com" className="hover:text-blue-300 transition-colors">
               Email
             </a>
             <span className="text-gray-600">•</span>
