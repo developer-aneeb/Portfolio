@@ -16,9 +16,9 @@ export function Experience() {
       title: "Bachelor of Science in Computer Science",
       company: "Air University, Islamabad",
       period: "2022 - 2026",
-      description: "Core studies focused on computer science fundamentals, artificial intelligence, and software engineering principles.",
+      description: "Relevant Coursework: Programming Fundamentals, Object-Oriented Programming, Design & Analysis of Algorithms, Data Structures & Algorithms, Full-Stack Web Development, Database Management, Mobile Computing, Calculus, Software Engineering, Artificial Intelligence, Deep Learning, Data Mining",
       icon: Briefcase,
-      skills: ["Computer Science", "Algorithms", "Software Engineering", "AI Foundation"]
+      skills: ["Computer Science", "Algorithms", "Software Engineering", "Artificial Intelligence"]
     }
   ];
 
