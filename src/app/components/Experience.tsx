@@ -11,6 +11,14 @@ export function Experience() {
       description: "Developed practical AI applications in healthcare, analytics, and NLP. Built solutions including BERT-based text classification, contextual chatbots, and LLM-powered applications.",
       icon: Cpu,
       skills: ["Machine Learning", "NLP", "Data Preprocessing", "Feature Engineering"]
+    },
+    {
+      title: "Bachelor of Science in Computer Science",
+      company: "Air University, Islamabad",
+      period: "2022 - 2026",
+      description: "Core studies focused on computer science fundamentals, artificial intelligence, and software engineering principles.",
+      icon: Briefcase,
+      skills: ["Computer Science", "Algorithms", "Software Engineering", "AI Foundation"]
     }
   ];
 
@@ -25,7 +33,7 @@ export function Experience() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
-            AI Systems Work
+            Experience & Education
           </h2>
           <p className="text-gray-400 text-lg">
             Engineering intelligent products from data to deployment
