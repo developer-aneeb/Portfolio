@@ -10,7 +10,7 @@ export function Experience() {
       period: "Apr 2026 - Jun 2026",
       description: "Developed practical AI applications in healthcare, analytics, and NLP. Built solutions including BERT-based text classification, contextual chatbots, and LLM-powered applications.",
       icon: Cpu,
-      skills: ["Machine Learning", "NLP", "Data Preprocessing", "Feature Engineering"]
+      skills: ["Machine Learning", "NLP", "Data Preprocessing", "Feature Engineering", "Computer Vision"]
     },
     {
       title: "Bachelor of Science in Computer Science",
@@ -51,9 +51,8 @@ export function Experience() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: index * 0.3 }}
               viewport={{ once: true }}
-              className={`relative flex items-center mb-16 ${
-                index % 2 === 0 ? 'justify-start' : 'justify-end'
-              }`}
+              className={`relative flex items-center mb-16 ${index % 2 === 0 ? 'justify-start' : 'justify-end'
+                }`}
             >
               {/* Timeline node */}
               <motion.div
@@ -79,10 +78,10 @@ export function Experience() {
                       <p className="text-blue-400">{exp.company}</p>
                     </div>
                   </div>
-                  
+
                   <p className="text-purple-300 text-sm mb-3">{exp.period}</p>
                   <p className="text-gray-300 mb-4">{exp.description}</p>
-                  
+
                   <div className="flex flex-wrap gap-2">
                     {exp.skills.map((skill) => (
                       <span
