@@ -30,7 +30,7 @@ export function About() {
               <div className="w-85 h-110 mx-auto rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-2 border-blue-400/30 p-4 flex items-center justify-center overflow-hidden">
                 <img 
                   src={profileImage} 
-                  alt="Tanaya Hingwe" 
+                  alt="Aneeb Ur Rehman" 
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
@@ -50,7 +50,7 @@ export function About() {
             className="space-y-6"
           >
             <h3 className="text-2xl font-bold text-white mb-6">
-              Graduate AI Engineer passionate about building intelligent systems
+              Full Stack AI Engineer passionate about building intelligent systems
             </h3>
             
             <p className="text-gray-300 text-lg leading-relaxed">
@@ -60,8 +60,8 @@ export function About() {
             </p>
 
             <p className="text-gray-300 text-lg leading-relaxed">
-              With experience as a Data Analyst at the University of West London and Protrainy, I've developed 
-              a strong foundation in data analysis, visualization, and machine learning implementation. I'm 
+              With experience as an AI/ML Engineering Intern at DevelopersHub Corporation, I've developed 
+              a strong foundation in practical machine learning, natural language processing, and AI application development. I'm 
               passionate about making AI accessible and impactful.
             </p>
 
