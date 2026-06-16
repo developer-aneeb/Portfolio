@@ -10,7 +10,7 @@ export function Projects() {
       title: "RXEASE - AI-Powered Prescription Interpretation App",
       description: "Scans handwritten prescriptions and converts them into structured medical data with validation, recommendations, secure sharing, and history dashboards.",
       icon: Bot,
-      tech: ["React", "Node", "Supabase", "Python", "FastAPI", "Flutter", "YOLO", "QWEN", "API Integration"],
+      tech: ["React.js", "Node.js", "Supabase", "Python", "FastAPI", "Flutter", "YOLO Segmentation", "Qwen-OCR", "API Integration"],
       gradient: "from-blue-400 to-cyan-500",
       demo: "#",
       github: "#"
