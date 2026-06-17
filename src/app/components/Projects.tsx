@@ -44,7 +44,7 @@ export function Projects() {
     },
     {
       title: "Action Recognition using CNN & LSTM",
-      description: "Deep learning model combining Convolutional Neural Networks and Long Short-Term Memory networks for accurate video action recognition.",
+      description: "Deep learning model combining Convolutional Neural Networks and Long Short-Term Memory networks for video action recognition.",
       icon: BrainCircuit,
       tech: ["Python", "TensorFlow", "Keras", "CNN", "LSTM", "Computer Vision"],
       gradient: "from-orange-400 to-amber-500",
