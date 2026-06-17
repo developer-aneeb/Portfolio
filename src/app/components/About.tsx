@@ -28,9 +28,9 @@ export function About() {
           >
             <div className="relative">
               <div className="w-85 h-110 mx-auto rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-2 border-blue-400/30 p-4 flex items-center justify-center overflow-hidden">
-                <img 
-                  src={profileImage} 
-                  alt="Aneeb Ur Rehman" 
+                <img
+                  src={profileImage}
+                  alt="Aneeb Ur Rehman"
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
@@ -52,16 +52,16 @@ export function About() {
             <h3 className="text-2xl font-bold text-white mb-6">
               Full Stack AI Engineer passionate about building scalable, intelligent systems
             </h3>
-            
+
             <p className="text-gray-300 text-lg leading-relaxed">
-              I specialize in creating AI-powered solutions that bridge the gap between complex algorithms 
-              and real-world applications. My expertise spans across full-stack web development, machine learning, 
+              I specialize in creating AI-powered solutions that bridge the gap between complex algorithms
+              and real-world applications. My expertise spans across full-stack web development, machine learning,
               computer vision workflows, and end-to-end product engineering.
             </p>
 
             <p className="text-gray-300 text-lg leading-relaxed">
-              With hands-on experience as an AI/ML Engineering Intern at DevelopersHub Corporation, I've developed 
-              a strong foundation in building scalable web applications using React, Node.js, and Python. I'm 
+              With hands-on experience as an AI/ML Engineering Intern at DevelopersHub Corporation, I've developed
+              a strong foundation in building scalable web applications using React, Node.js, and Python. I'm
               focused on delivering performance, reliability, and an exceptional user experience in every project.
             </p>
 
