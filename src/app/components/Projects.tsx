@@ -19,7 +19,7 @@ export function Projects() {
       title: "FinSight - AI-Driven Personal Finance Manager",
       description: "A modern AI-driven platform to track income and expenses, enforce smart budgets, and receive data-driven AI insights.",
       icon: LineChart,
-      tech: ["TypeScript", "React", "Next.js", "Tailwind CSS", "AI Insights"],
+      tech: ["TypeScript", "React", "Next.js", "Tailwind CSS", "AI Insights", "Supabase"],
       gradient: "from-green-400 to-emerald-500",
       demo: "#",
       github: "https://github.com/developer-aneeb/FinSight"
