@@ -56,3 +56,6 @@ public/build/
 
 # Ignore local storybook build
 .storybook/
+
+src/assets/
+assets/*
