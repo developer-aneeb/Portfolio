@@ -38,8 +38,8 @@ export function TechStack() {
     {
       category: "AI / ML",
       skills: [
-        { name: "YOLO", level: 88, icon: "🎯" },
-        { name: "OCR", level: 90, icon: "🔎" },
+        { name: "YOLO Segmentation", level: 88, icon: "🎯" },
+        { name: "Qwen-OCR & Pipelines", level: 90, icon: "🔎" },
         { name: "Model Training", level: 87, icon: "🧠" },
         { name: "Preprocessing", level: 90, icon: "🧼" },
         { name: "Annotation", level: 85, icon: "📝" }
