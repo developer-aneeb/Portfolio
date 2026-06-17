@@ -117,11 +117,11 @@ export function Contact() {
             {/* Animated AI Avatar */}
             <div className="text-center">
               <motion.div
-                animate={{ 
+                animate={{
                   scale: [1, 1.1, 1],
                   rotate: [0, 5, -5, 0]
                 }}
-                transition={{ 
+                transition={{
                   duration: 4,
                   repeat: Infinity,
                   ease: "easeInOut"
@@ -184,6 +184,7 @@ export function Contact() {
           viewport={{ once: true }}
           className="text-center mt-16 pt-8 border-t border-gray-700/50"
         >
+
           <p className="text-gray-500">
             © 2026 ANEEB UR REHMAN. Full Stack AI Engineer.
           </p>
@@ -192,11 +193,11 @@ export function Contact() {
               Email
             </a>
             <span className="text-gray-600">•</span>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">
+            <a href="https://github.com/developer-aneeb" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">
               GitHub
             </a>
             <span className="text-gray-600">•</span>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">
+            <a href="https://www.linkedin.com/in/aneeb-ur-rehman-528a50299/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">
               LinkedIn
             </a>
           </div>
