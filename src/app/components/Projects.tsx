@@ -10,7 +10,7 @@ export function Projects() {
       title: "RXEASE - AI-Powered Prescription Interpretation App",
       description: "Scans handwritten prescriptions and converts them into structured medical data with validation, recommendations, secure sharing, and history dashboards.",
       icon: Bot,
-      tech: ["React.js", "Node.js", "Supabase", "Python", "FastAPI", "Flutter", "YOLO", "Qwen-OCR"],
+      tech: ["React.js", "Node.js", "Supabase", "Python", "FastAPI", "Flutter", "YOLO Segmentation", "Qwen-OCR"],
       gradient: "from-blue-400 to-cyan-500",
       demo: "#",
       github: "https://github.com/developer-aneeb/RxEaseAI_Web"
@@ -93,7 +93,7 @@ export function Projects() {
             >
               <Card className="bg-gray-900/50 border-gray-700/50 hover:border-blue-400/50 transition-all duration-300 overflow-hidden relative">
                 <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`} />
-                
+
                 <CardHeader className="relative">
                   <div className="flex items-center justify-between mb-4">
                     <motion.div
@@ -123,7 +123,7 @@ export function Projects() {
                     {project.description}
                   </CardDescription>
                 </CardHeader>
-                
+
                 <CardContent className="relative">
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech) => (
