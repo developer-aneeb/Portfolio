@@ -7,7 +7,7 @@ import { Button } from './ui/button';
 export function Projects() {
   const projects = [
     {
-      title: "RXEASE - AI-Powered Prescription Interpretation App",
+      title: "RXEASEAI - AI-Powered Prescription Interpretation App",
       description: "Scans handwritten prescriptions and converts them into structured medical data with validation, recommendations, secure sharing, and history dashboards.",
       icon: Bot,
       tech: ["React.js", "Node.js", "Supabase", "Python", "FastAPI", "Flutter", "YOLO Segmentation", "Qwen-OCR"],
