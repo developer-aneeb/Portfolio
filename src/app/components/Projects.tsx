@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ExternalLink, Github, Bot, BarChart3 } from 'lucide-react';
+import { ExternalLink, Github, Bot, BarChart3, LineChart, Activity, BrainCircuit, Database } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 
@@ -10,19 +10,55 @@ export function Projects() {
       title: "RXEASE - AI-Powered Prescription Interpretation App",
       description: "Scans handwritten prescriptions and converts them into structured medical data with validation, recommendations, secure sharing, and history dashboards.",
       icon: Bot,
-      tech: ["React.js", "Node.js", "Supabase", "Python", "FastAPI", "Flutter", "YOLO Segmentation", "Qwen-OCR", "API Integration"],
+      tech: ["React.js", "Node.js", "Supabase", "Python", "FastAPI", "Flutter", "YOLO", "Qwen-OCR"],
       gradient: "from-blue-400 to-cyan-500",
       demo: "#",
-      github: "#"
+      github: "https://github.com/developer-aneeb/RxEaseAI_Web"
+    },
+    {
+      title: "FinSight - AI-Driven Personal Finance Manager",
+      description: "A modern AI-driven platform to track income and expenses, enforce smart budgets, and receive data-driven AI insights.",
+      icon: LineChart,
+      tech: ["TypeScript", "React", "Next.js", "Tailwind CSS", "AI Insights"],
+      gradient: "from-green-400 to-emerald-500",
+      demo: "#",
+      github: "https://github.com/developer-aneeb/FinSight"
+    },
+    {
+      title: "MediTrack - Healthcare Management",
+      description: "MERN stack application for managing prescriptions, medication reminders, and user profiles with an intuitive UI.",
+      icon: Activity,
+      tech: ["MongoDB", "Express.js", "React", "Node.js", "JavaScript"],
+      gradient: "from-rose-400 to-red-500",
+      demo: "#",
+      github: "https://github.com/developer-aneeb/MediTrack"
     },
     {
       title: "StoneFusionHub - Full-Stack Marketplace Platform",
       description: "Multi-role marketplace for construction materials with AI recommendations, real-time inventory, and optimized order workflows.",
       icon: BarChart3,
-      tech: ["Next.js", "React", "Supabase", "PostgreSQL", "Supabase Realtime", "Tailwind CSS"],
+      tech: ["Next.js", "React", "Supabase", "PostgreSQL", "Tailwind CSS"],
       gradient: "from-purple-400 to-pink-500",
       demo: "#",
       github: "#"
+    },
+    {
+      title: "Action Recognition using CNN & LSTM",
+      description: "Deep learning model combining Convolutional Neural Networks and Long Short-Term Memory networks for accurate video action recognition.",
+      icon: BrainCircuit,
+      tech: ["Python", "TensorFlow", "Keras", "CNN", "LSTM", "Computer Vision"],
+      gradient: "from-orange-400 to-amber-500",
+      demo: "#",
+      github: "https://github.com/developer-aneeb/Action_Recognition_CNN_LSTM"
+    },
+    {
+      title: "Applied AI & ML Projects",
+      description: "A collection of Machine Learning, Data Science, and LLM engineering projects including predictive modeling, healthcare AI, and stock forecasting.",
+      icon: Database,
+      tech: ["Python", "Jupyter", "Machine Learning", "Data Science", "LLMs"],
+      gradient: "from-indigo-400 to-blue-500",
+      demo: "#",
+      github: "https://github.com/developer-aneeb/AI-ML-Internship-Projects"
     }
   ];
 
