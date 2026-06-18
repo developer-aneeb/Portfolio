@@ -73,7 +73,14 @@ npm run preview
 
 ---
 
-## 📫 Contact
+  ## Contributing & Notes
+
+  - This repo is structured for a single-author portfolio. Contributions are welcome if they improve layout, accessibility, or performance.
+  - Use branches for content updates and open a PR for major layout changes.
+
+  ---
+
+## Contact
 
 **ANEEB UR REHMAN — Full Stack AI Engineer**  
 - **Email:** dev.aneeb.rehman@gmail.com  
