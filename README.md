@@ -53,7 +53,6 @@ The core content of the portfolio can be easily customized in the following comp
 
 ---
 
-
 ## 🛠️ Development (Local Setup)
 
 Prerequisites: Node 18+, npm
