@@ -23,21 +23,35 @@ This repository contains the source code for my personal portfolio website. It h
 
 ---
 
-## 📂 Project Structure & Customization
+## Scope & purpose (repo-specific)
 
-The core content of the portfolio can be easily customized in the following component files located in `src/app/components/`:
-
-- `Hero.tsx`: Headline and introductory text
-- `About.tsx`: Professional biography and background
-- `Experience.tsx`: Timeline of work experience and education
-- `Projects.tsx`: Showcase of featured projects and GitHub links
-- `TechStack.tsx`: Detailed breakdown of skills and tools
-- `Contact.tsx`: Contact information and call-to-action
-- `styles/`: Global styles and Tailwind directives
+- This repository contains the portfolio website source only — the code you deploy to present projects, case studies, and professional contact information.
+- It does not include full ML training code, large datasets, or model checkpoints. If a project requires deep ML artifacts, link to a dedicated project repo for those materials.
 
 ---
 
-## 🛠️ Development (Local Setup)
+## Screenshots / Preview (replace with real assets)
+
+<!-- Add high-quality screenshots to `src/assets/` and reference them here. Recruiters prefer visual proof.
+
+| Desktop (Hero) | Projects | Mobile |
+|---:|:---:|:---:|
+| ![Hero](src/assets/hero-screenshot.png) | ![Projects](src/assets/projects-screenshot.png) | ![Mobile](src/assets/mobile-screenshot.png) | -->
+
+---
+
+## Where to edit content (quick paths)
+
+- Hero / headline: `src/app/components/Hero.tsx`
+- About / bio: `src/app/components/About.tsx`
+- Projects list & cards: `src/app/components/Projects.tsx` (array of project objects)
+- Contact form and CTA: `src/app/components/Contact.tsx`
+- Images & screenshots: `src/assets/`
+- Global styles & tokens (Tailwind): `tailwind.config.mjs`, `src/styles/`
+
+
+
+## Development (local)
 
 Prerequisites: Node 18+, npm
 
