@@ -53,16 +53,6 @@ The core content of the portfolio can be easily customized in the following comp
 
 ---
 
-## Where to edit content (quick paths)
-
-- Hero / headline: `src/app/components/Hero.tsx`
-- About / bio: `src/app/components/About.tsx`
-- Projects list & cards: `src/app/components/Projects.tsx` (array of project objects)
-- Contact form and CTA: `src/app/components/Contact.tsx`
-- Images & screenshots: `src/assets/`
-- Global styles & tokens (Tailwind): `tailwind.config.mjs`, `src/styles/`
-
-
 
 ## 🛠️ Development (Local Setup)
 
