@@ -12,125 +12,54 @@ Production-ready AI engineer portfolio built to showcase intelligent systems, fu
 
 ---
 
-## One-line summary
+## 🚀 About This Repository
 
-- I build AI-powered products and full-stack systems that turn raw data into production features. This repository is the website source that showcases those projects and the engineering work behind them.
+This repository contains the source code for my personal portfolio website. It highlights my projects, case studies, and professional experience building AI-powered products and scalable full-stack applications.
 
----
-
-## Key facts (quick)
-
-- Frontend: React + Vite + TypeScript
-- Styling: Tailwind CSS
-- Animations: Framer Motion
-- Edit content in: `src/app/components/` (Hero.tsx, About.tsx, Projects.tsx, Contact.tsx)
-- Contact: `dev.aneeb.rehman@gmail.com`
+- **Frontend Framework:** React + Vite + TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion (`motion/react`)
+- **Icons:** Lucide React
 
 ---
 
-## Scope & purpose (repo-specific)
+## 📂 Project Structure & Customization
 
-- This repository contains the portfolio website source only — the code you deploy to present projects, case studies, and professional contact information.
-- It does not include full ML training code, large datasets, or model checkpoints. If a project requires deep ML artifacts, link to a dedicated project repo for those materials.
+The core content of the portfolio can be easily customized in the following component files located in `src/app/components/`:
 
----
-
-## Screenshots / Preview (replace with real assets)
-
-<!-- Add high-quality screenshots to `src/assets/` and reference them here. Recruiters prefer visual proof.
-
-| Desktop (Hero) | Projects | Mobile |
-|---:|:---:|:---:|
-| ![Hero](src/assets/hero-screenshot.png) | ![Projects](src/assets/projects-screenshot.png) | ![Mobile](src/assets/mobile-screenshot.png) | -->
+- `Hero.tsx`: Headline and introductory text
+- `About.tsx`: Professional biography and background
+- `Experience.tsx`: Timeline of work experience and education
+- `Projects.tsx`: Showcase of featured projects and GitHub links
+- `TechStack.tsx`: Detailed breakdown of skills and tools
+- `Contact.tsx`: Contact information and call-to-action
+- `styles/`: Global styles and Tailwind directives
 
 ---
 
-## Where to edit content (quick paths)
+## 🛠️ Development (Local Setup)
 
-- Hero / headline: `src/app/components/Hero.tsx`
-- About / bio: `src/app/components/About.tsx`
-- Projects list & cards: `src/app/components/Projects.tsx` (array of project objects)
-- Contact form and CTA: `src/app/components/Contact.tsx`
-- Images & screenshots: `src/assets/`
-- Global styles & tokens (Tailwind): `tailwind.config.mjs`, `src/styles/`
-
-
-
-## Development (local)
-
-Prereqs: Node 18+, npm
+Prerequisites: Node 18+, npm
 
 ```bash
-# Install
+# Install dependencies
 npm install
 
-# Start dev server
+# Start the development server
 npm run dev
 
-# Build
+# Build for production
 npm run build
 
-# Preview
+# Preview the production build locally
 npm run preview
 ```
 
-Notes:
-- This repository uses Vite for a fast development loop. TypeScript is enabled across the front-end.
-
 ---
 
-## Tech stack (accurate for this repo)
-
-- Frontend: React + Vite + TypeScript
-- Styling: Tailwind CSS
-- Animations: Framer Motion
-
----
-
-## Screenshots / Preview (replace with real assets)
-
-Replace placeholder images in `src/assets/` with the following recommended files:
-
-- `src/assets/hero-screenshot.png` — Desktop hero section (1920×1080 recommended)
-- `src/assets/projects-screenshot.png` — Projects grid (1200×800 recommended)
-- `src/assets/mobile-screenshot.png` — Mobile view (375×812 recommended)
-
-Add these images and commit them to improve the repo's presentation.
-
----
-
-
----
-  Prereqs: Node 18+, npm
-
-  ```bash
-  # Install
-  npm install
-
-  # Start dev server
-  npm run dev
-
-  # Build
-  npm run build
-
-  # Preview
-  npm run preview
-  ```
-
-  Notes:
-  - The site is built with Vite for a fast dev loop. The project uses TypeScript and Tailwind CSS.
-  ---
-
-  ## Contributing & Notes
-
-  - This repo is structured for a single-author portfolio. Contributions are welcome if they improve layout, accessibility, or performance.
-  - Use branches for content updates and open a PR for major layout changes.
-
-  ---
-
-## Contact
+## 📫 Contact
 
 **ANEEB UR REHMAN — Full Stack AI Engineer**  
-Email: dev.aneeb.rehman@gmail.com  
-GitHub:https://github.com/developer-aneeb
-LinkedIn: https://www.linkedin.com/in/aneeb-ur-rehman-528a50299/
+- **Email:** dev.aneeb.rehman@gmail.com  
+- **GitHub:** [developer-aneeb](https://github.com/developer-aneeb)  
+- **LinkedIn:** [Aneeb Ur Rehman](https://www.linkedin.com/in/aneeb-ur-rehman-528a50299/)
