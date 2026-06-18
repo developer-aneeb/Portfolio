@@ -39,6 +39,19 @@ This repository contains the source code for my personal portfolio website. It h
 | ![Hero](src/assets/hero-screenshot.png) | ![Projects](src/assets/projects-screenshot.png) | ![Mobile](src/assets/mobile-screenshot.png) | -->
 
 ---
+## 📂 Project Structure & Customization
+
+The core content of the portfolio can be easily customized in the following component files located in `src/app/components/`:
+
+- `Hero.tsx`: Headline and introductory text
+- `About.tsx`: Professional biography and background
+- `Experience.tsx`: Timeline of work experience and education
+- `Projects.tsx`: Showcase of featured projects and GitHub links
+- `TechStack.tsx`: Detailed breakdown of skills and tools
+- `Contact.tsx`: Contact information and call-to-action
+- `styles/`: Global styles and Tailwind directives
+
+---
 
 ## Where to edit content (quick paths)
 
@@ -51,7 +64,7 @@ This repository contains the source code for my personal portfolio website. It h
 
 
 
-## Development (local)
+## 🛠️ Development (Local Setup)
 
 Prerequisites: Node 18+, npm
 
