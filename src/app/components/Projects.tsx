@@ -12,7 +12,7 @@ export function Projects() {
       icon: Bot,
       tech: ["React.js", "Node.js", "Supabase", "Python", "FastAPI", "Flutter", "YOLO Segmentation", "Qwen-OCR"],
       gradient: "from-blue-400 to-cyan-500",
-      demo: "https://rx-ease-ai.vercel.app",
+      demo: "https://rx-ease-ai-web.vercel.app",
       github: "https://github.com/developer-aneeb/RxEaseAI_Web"
     },
     {
