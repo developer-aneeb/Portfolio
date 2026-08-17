@@ -76,7 +76,6 @@ npm run preview
 
   - This repo is structured for a single-author portfolio. Contributions are welcome if they improve layout, accessibility, or performance.
   - Use branches for content updates and open a PR for major layout changes.
-
   ---
 
 ## Contact
