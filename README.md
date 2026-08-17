@@ -50,7 +50,6 @@ The core content of the portfolio can be easily customized in the following comp
 - `TechStack.tsx`: Detailed breakdown of skills and tools
 - `Contact.tsx`: Contact information and call-to-action
 - `styles/`: Global styles and Tailwind directives
-
 ---
 
 ## 🛠️ Development (Local Setup)
