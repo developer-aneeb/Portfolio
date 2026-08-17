@@ -31,13 +31,11 @@ This repository contains the source code for my personal portfolio website. It h
 ---
 
 ## Screenshots / Preview (replace with real assets)
-
 <!-- Add high-quality screenshots to `src/assets/` and reference them here. Recruiters prefer visual proof.
 
 | Desktop (Hero) | Projects | Mobile |
 |---:|:---:|:---:|
 | ![Hero](src/assets/hero-screenshot.png) | ![Projects](src/assets/projects-screenshot.png) | ![Mobile](src/assets/mobile-screenshot.png) | -->
-
 ---
 ## 📂 Project Structure & Customization
 
