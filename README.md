@@ -70,7 +70,6 @@ npm run build
 # Preview the production build locally
 npm run preview
 ```
-
 ---
 
   ## Contributing & Notes
