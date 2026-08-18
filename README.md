@@ -36,6 +36,7 @@ This repository contains the source code for my personal portfolio website. It h
 | Desktop (Hero) | Projects | Mobile |
 |---:|:---:|:---:|
 | ![Hero](src/assets/hero-screenshot.png) | ![Projects](src/assets/projects-screenshot.png) | ![Mobile](src/assets/mobile-screenshot.png) | -->
+
 ---
 ## 📂 Project Structure & Customization
 
@@ -48,6 +49,7 @@ The core content of the portfolio can be easily customized in the following comp
 - `TechStack.tsx`: Detailed breakdown of skills and tools
 - `Contact.tsx`: Contact information and call-to-action
 - `styles/`: Global styles and Tailwind directives
+
 ---
 
 ## 🛠️ Development (Local Setup)
@@ -73,6 +75,7 @@ npm run preview
 
   - This repo is structured for a single-author portfolio. Contributions are welcome if they improve layout, accessibility, or performance.
   - Use branches for content updates and open a PR for major layout changes.
+  
   ---
 
 ## Contact
