@@ -70,7 +70,6 @@ npm run build
 npm run preview
 ```
 ---
-
   ## Contributing & Notes
 
   - This repo is structured for a single-author portfolio. Contributions are welcome if they improve layout, accessibility, or performance.
