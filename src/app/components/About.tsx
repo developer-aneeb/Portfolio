@@ -79,6 +79,7 @@ export function About() {
                 <span>Passionate about AI</span>
               </div>
             </div>
+            
 
             <motion.div
               initial={{ opacity: 0 }}
