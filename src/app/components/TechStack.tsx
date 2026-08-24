@@ -1,142 +1,135 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Brain, Cpu, Server, Layout, Database, Cloud, Check } from 'lucide-react';
 
 export function TechStack() {
-  const domains = [
+  const techCategories = [
     {
-      category: "Computer Vision & AI Engineering",
-      icon: Brain,
-      color: "from-blue-500/20 to-cyan-500/20",
-      iconColor: "text-blue-400",
-      borderColor: "border-blue-500/30",
-      description: "Pipeline architecture for image understanding, OCR, and transformer-based text models.",
+      category: "Frontend",
       skills: [
-        "YOLO Segmentation & Detection",
-        "Qwen-OCR & Vision LLMs",
-        "PyTorch & TensorFlow",
-        "OpenCV & Image Preprocessing",
-        "BERT & Text Classification",
-        "Hugging Face Transformers"
+        { name: "HTML", level: 92, icon: "🧱" },
+        { name: "CSS", level: 90, icon: "🎨" },
+        { name: "Bootstrap", level: 86, icon: "🧩" },
+        { name: "Tailwind CSS", level: 92, icon: "🌬️" },
+        { name: "JavaScript", level: 90, icon: "⚡" },
+        { name: "React.js", level: 92, icon: "⚛️" },
+        { name: "Next.js", level: 88, icon: "▲" }
       ]
     },
     {
-      category: "Backend & Microservices",
-      icon: Server,
-      color: "from-purple-500/20 to-indigo-500/20",
-      iconColor: "text-purple-400",
-      borderColor: "border-purple-500/30",
-      description: "High-throughput asynchronous APIs and type-safe validation layers.",
+      category: "Backend",
       skills: [
-        "FastAPI (Python)",
-        "Node.js & Express.js",
-        "RESTful API Design",
-        "Pydantic Schema Validation",
-        "Asynchronous Task Workers",
-        "JWT & Role-Based Auth"
+        { name: "Node.js", level: 90, icon: "🟢" },
+        { name: "Express.js", level: 88, icon: "🚀" },
+        { name: "Python", level: 92, icon: "🐍" },
+        { name: "FastAPI", level: 87, icon: "⚡" },
+        { name: "RESTful APIs", level: 90, icon: "🔗" }
       ]
     },
     {
-      category: "Frontend & UI Systems",
-      icon: Layout,
-      color: "from-pink-500/20 to-rose-500/20",
-      iconColor: "text-pink-400",
-      borderColor: "border-pink-500/30",
-      description: "Modern, reactive web applications with clean state management.",
+      category: "Databases",
       skills: [
-        "TypeScript & JavaScript (ES6+)",
-        "React.js & Next.js",
-        "Tailwind CSS",
-        "Responsive & Adaptive UI",
-        "Motion & Micro-interactions",
-        "Client State Management"
+        { name: "MongoDB", level: 88, icon: "🍃" },
+        { name: "PostgreSQL", level: 90, icon: "🐘" },
+        { name: "Supabase", level: 88, icon: "🧪" },
+        { name: "Firebase", level: 86, icon: "🔥" },
+        { name: "SQL", level: 90, icon: "🗃️" }
       ]
     },
     {
-      category: "Databases & Cloud Deployment",
-      icon: Database,
-      color: "from-emerald-500/20 to-teal-500/20",
-      iconColor: "text-emerald-400",
-      borderColor: "border-emerald-500/30",
-      description: "Reliable persistent storage, security policies, and production deployment.",
+      category: "AI / ML",
       skills: [
-        "PostgreSQL & SQL",
-        "Supabase (Auth, RLS, Storage)",
-        "MongoDB & Mongoose",
-        "Git & GitHub Actions",
-        "Vercel & Render Cloud",
-        "Linux Environment & Docker basics"
+        { name: "YOLO Segmentation", level: 88, icon: "🎯" },
+        { name: "Qwen-OCR & Pipelines", level: 90, icon: "🔎" },
+        { name: "Model Training", level: 87, icon: "🧠" },
+        { name: "Preprocessing", level: 90, icon: "🧼" },
+        { name: "Annotation", level: 85, icon: "📝" }
+      ]
+    },
+    {
+      category: "Tools / Deployment",
+      skills: [
+        { name: "Git", level: 90, icon: "🌱" },
+        { name: "GitHub", level: 90, icon: "🐙" },
+        { name: "npm", level: 88, icon: "📦" },
+        { name: "VS Code", level: 90, icon: "🧩" },
+        { name: "Render", level: 85, icon: "☁️" },
+        { name: "Vercel", level: 86, icon: "▲" },
+        { name: "Hugging Face", level: 84, icon: "🤗" },
+        { name: "Kaggle", level: 83, icon: "📊" }
       ]
     }
   ];
 
   return (
-    <section id="tech-stack" className="py-24 px-6 relative">
+    <section className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
-        {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-semibold uppercase tracking-wider text-pink-400 mb-2 block">
-            Technical Arsenal
-          </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-100 tracking-tight">
-            Engineering Capabilities & Stack
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+            Tech Stack
           </h2>
-          <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto mt-4">
-            Curated tools and frameworks used to engineer resilient, end-to-end AI systems.
+          <p className="text-gray-400 text-lg">
+            The stack I use to build production-ready AI products
           </p>
         </motion.div>
 
-        {/* Matrix Grid */}
         <div className="grid md:grid-cols-2 gap-8">
-          {domains.map((domain, index) => {
-            const Icon = domain.icon;
-            return (
-              <motion.div
-                key={domain.category}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.15 }}
-                viewport={{ once: true }}
-                className="p-6 sm:p-8 rounded-2xl bg-slate-900/60 border border-slate-800 backdrop-blur-sm hover:border-slate-700 transition-all duration-300 shadow-xl flex flex-col justify-between"
-              >
-                <div>
-                  {/* Category Header */}
-                  <div className="flex items-center gap-3.5 mb-4">
-                    <div className={`p-3 rounded-xl bg-gradient-to-br ${domain.color} border ${domain.borderColor}`}>
-                      <Icon className={`w-5 h-5 ${domain.iconColor}`} />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-bold text-slate-100">{domain.category}</h3>
-                      <p className="text-xs text-slate-400 mt-0.5">{domain.description}</p>
-                    </div>
-                  </div>
-
-                  {/* Skills Grid */}
-                  <div className="grid sm:grid-cols-2 gap-2.5 my-6">
-                    {domain.skills.map((skill) => (
-                      <div
-                        key={skill}
-                        className="flex items-center gap-2 px-3 py-2 rounded-lg bg-slate-950/70 border border-slate-800/80 text-xs font-medium text-slate-300"
-                      >
-                        <Check className="w-3.5 h-3.5 text-blue-400 shrink-0" />
-                        <span>{skill}</span>
+          {techCategories.map((category, categoryIndex) => (
+            <motion.div
+              key={category.category}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: categoryIndex * 0.2 }}
+              viewport={{ once: true }}
+              className="bg-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-lg p-6 hover:border-purple-400/50 transition-all duration-300"
+            >
+              <h3 className="text-xl font-bold text-white mb-6 text-center">
+                {category.category}
+              </h3>
+              
+              <div className="space-y-4">
+                {category.skills.map((skill, index) => (
+                  <motion.div
+                    key={skill.name}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: categoryIndex * 0.2 + index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="flex items-center space-x-4"
+                  >
+                    <motion.div
+                      whileHover={{ scale: 1.3, rotate: 15 }}
+                      className="text-2xl"
+                    >
+                      {skill.icon}
+                    </motion.div>
+                    
+                    <div className="flex-1">
+                      <div className="flex justify-between items-center mb-1">
+                        <span className="text-white font-medium">{skill.name}</span>
+                        <span className="text-purple-400 text-sm">{skill.level}%</span>
                       </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="pt-4 border-t border-slate-800/80 text-[11px] text-slate-500 font-mono">
-                  PRODUCTION TESTED & VERIFIED
-                </div>
-              </motion.div>
-            );
-          })}
+                      
+                      <div className="w-full bg-gray-700 rounded-full h-2">
+                        <motion.div
+                          initial={{ width: 0 }}
+                          whileInView={{ width: `${skill.level}%` }}
+                          transition={{ duration: 1, delay: categoryIndex * 0.2 + index * 0.1 + 0.5 }}
+                          viewport={{ once: true }}
+                          className="bg-gradient-to-r from-purple-400 to-pink-400 h-2 rounded-full"
+                        />
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
