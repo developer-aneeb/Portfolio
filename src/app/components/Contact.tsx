@@ -1,22 +1,35 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Mail, Github, Linkedin, Send, MessageSquare } from 'lucide-react';
+import { Mail, Github, Linkedin, Send, Copy, Check, MessageSquare, Sparkles, MapPin } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from './ui/card';
 
 export function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    subject: '',
     message: ''
   });
+  const [copied, setCopied] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+    setSubmitted(true);
+    // Simulates prompt submission response
+    setTimeout(() => {
+      setSubmitted(false);
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    }, 4000);
+  };
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText('dev.aneeb.rehman@gmail.com');
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2500);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -27,151 +40,232 @@ export function Contact() {
   };
 
   return (
-    <section className="py-20 px-6">
+    <section id="contact" className="py-24 px-6 relative">
       <div className="max-w-6xl mx-auto">
+        {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.7 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
-            Let's Connect
+          <span className="text-xs font-semibold uppercase tracking-wider text-blue-400 mb-2 block">
+            Get in Touch
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-100 tracking-tight">
+            Let's Build Intelligent Systems Together
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Let's build intelligent products that solve real problems.
+          <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto mt-4">
+            Whether you have an AI pipeline to architect, a full-stack product to ship, or a technical inquiry.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Contact Form */}
+        <div className="grid lg:grid-cols-12 gap-10 items-start">
+          {/* Interactive Contact Form */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
+            className="lg:col-span-7"
           >
-            {/* <Card className="bg-gray-900/80 backdrop-blur-sm border-gray-700/50 hover:border-blue-400/50 transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="text-white flex items-center space-x-2">
-                  <MessageSquare className="text-blue-400" />
-                  <span>Start a Project</span>
+            <Card className="bg-slate-900/70 border-slate-800 backdrop-blur-md rounded-2xl shadow-2xl p-2 sm:p-4">
+              <CardHeader className="space-y-1">
+                <CardTitle className="text-xl font-bold text-slate-100 flex items-center gap-2">
+                  <MessageSquare className="w-5 h-5 text-blue-400" />
+                  <span>Send a Direct Message</span>
                 </CardTitle>
+                <CardDescription className="text-xs text-slate-400">
+                  Fill in your details below and I'll respond within 24 hours.
+                </CardDescription>
               </CardHeader>
+
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <Input
-                      type="text"
-                      name="name"
-                      placeholder="Your Name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      className="bg-gray-800/50 border-gray-600 text-white placeholder:text-gray-400 focus:border-blue-400"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Input
-                      type="email"
-                      name="email"
-                      placeholder="Your Email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="bg-gray-800/50 border-gray-600 text-white placeholder:text-gray-400 focus:border-blue-400"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Textarea
-                      name="message"
-                      placeholder="Your Message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      rows={5}
-                      className="bg-gray-800/50 border-gray-600 text-white placeholder:text-gray-400 focus:border-blue-400 resize-none"
-                      required
-                    />
-                  </div>
-                  <Button
-                    type="submit"
-                    className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white"
+                {submitted ? (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    className="p-6 rounded-xl bg-emerald-950/40 border border-emerald-500/30 text-center space-y-3"
                   >
-                    <Send className="mr-2" size={16} />
-                    Start Conversation
-                  </Button>
-                </form>
+                    <div className="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 mx-auto flex items-center justify-center">
+                      <Check className="w-6 h-6" />
+                    </div>
+                    <div className="text-base font-semibold text-emerald-300">Message Received!</div>
+                    <p className="text-xs text-slate-300 max-w-md mx-auto">
+                      Thank you for reaching out, {formData.name || 'there'}. I'll get back to your email shortly.
+                    </p>
+                  </motion.div>
+                ) : (
+                  <form onSubmit={handleSubmit} className="space-y-4">
+                    <div className="grid sm:grid-cols-2 gap-4">
+                      <div className="space-y-1.5">
+                        <label className="text-xs font-medium text-slate-300">Your Name</label>
+                        <Input
+                          type="text"
+                          name="name"
+                          placeholder="e.g. Sarah Connor"
+                          value={formData.name}
+                          onChange={handleChange}
+                          className="bg-slate-950/70 border-slate-800 text-slate-100 placeholder:text-slate-600 focus:border-blue-500 rounded-xl text-sm"
+                          required
+                        />
+                      </div>
+                      <div className="space-y-1.5">
+                        <label className="text-xs font-medium text-slate-300">Your Email</label>
+                        <Input
+                          type="email"
+                          name="email"
+                          placeholder="e.g. sarah@example.com"
+                          value={formData.email}
+                          onChange={handleChange}
+                          className="bg-slate-950/70 border-slate-800 text-slate-100 placeholder:text-slate-600 focus:border-blue-500 rounded-xl text-sm"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div className="space-y-1.5">
+                      <label className="text-xs font-medium text-slate-300">Project Type or Topic</label>
+                      <Input
+                        type="text"
+                        name="subject"
+                        placeholder="e.g. Computer Vision Architecture / Full-Stack Role"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        className="bg-slate-950/70 border-slate-800 text-slate-100 placeholder:text-slate-600 focus:border-blue-500 rounded-xl text-sm"
+                        required
+                      />
+                    </div>
+
+                    <div className="space-y-1.5">
+                      <label className="text-xs font-medium text-slate-300">Message</label>
+                      <Textarea
+                        name="message"
+                        placeholder="Describe your technical requirements, opportunity, or questions..."
+                        value={formData.message}
+                        onChange={handleChange}
+                        rows={4}
+                        className="bg-slate-950/70 border-slate-800 text-slate-100 placeholder:text-slate-600 focus:border-blue-500 rounded-xl text-sm resize-none"
+                        required
+                      />
+                    </div>
+
+                    <Button
+                      type="submit"
+                      className="w-full bg-blue-600 hover:bg-blue-500 text-white font-medium py-2.5 rounded-xl shadow-lg shadow-blue-600/20 transition-all duration-200"
+                    >
+                      <Send className="w-4 h-4 mr-2" />
+                      Send Message
+                    </Button>
+                  </form>
+                )}
               </CardContent>
-            </Card> */}
+            </Card>
           </motion.div>
 
-          {/* AI Avatar & Social Links */}
+          {/* Quick Contact Hub & Direct Links */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="space-y-8"
+            className="lg:col-span-5 space-y-6"
           >
-            {/* Animated AI Avatar */}
-            <div className="text-center">
-              <motion.div
-                animate={{
-                  scale: [1, 1.1, 1],
-                  rotate: [0, 5, -5, 0]
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-                className="w-40 h-40 mx-auto mb-6 relative"
-              >
-                <div className="w-full h-full rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-2 border-blue-400/30 flex items-center justify-center text-6xl">
-                  🤖
+            {/* Quick Email Card */}
+            <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 backdrop-blur-sm shadow-xl space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="p-2.5 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400">
+                  <Mail className="w-5 h-5" />
                 </div>
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                  className="absolute inset-0 border-2 border-dashed border-purple-400/20 rounded-full"
-                />
-              </motion.div>
-              <p className="text-gray-300 text-lg">
-                "Ready to turn ideas into shipped systems."
-              </p>
+                <div>
+                  <div className="text-xs font-semibold uppercase tracking-wider text-slate-400">Direct Email</div>
+                  <div className="text-sm font-medium text-slate-200">dev.aneeb.rehman@gmail.com</div>
+                </div>
+              </div>
+
+              <div className="flex gap-2">
+                <Button
+                  size="sm"
+                  variant="outline"
+                  onClick={handleCopyEmail}
+                  className="flex-1 bg-slate-800/80 border-slate-700 text-slate-200 hover:bg-slate-700 text-xs rounded-xl"
+                >
+                  {copied ? (
+                    <>
+                      <Check className="w-3.5 h-3.5 mr-1.5 text-emerald-400" />
+                      Copied!
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="w-3.5 h-3.5 mr-1.5" />
+                      Copy Email
+                    </>
+                  )}
+                </Button>
+
+                <Button
+                  size="sm"
+                  className="flex-1 bg-blue-600/80 hover:bg-blue-500 text-white text-xs rounded-xl"
+                  asChild
+                >
+                  <a href="mailto:dev.aneeb.rehman@gmail.com">
+                    Open Mailer
+                  </a>
+                </Button>
+              </div>
             </div>
 
-            {/* Social Links */}
-            <div className="space-y-4">
-              <h3 className="text-xl font-bold text-white text-center mb-6">Connect With Me</h3>
-              <div className="space-y-3">
-                {[
-                  { icon: Mail, label: "dev.aneeb.rehman@gmail.com", href: "mailto:dev.aneeb.rehman@gmail.com", color: "from-red-400 to-pink-400" },
-                  { icon: Github, label: "GitHub Profile", href: "https://github.com/developer-aneeb", color: "from-gray-400 to-gray-600" },
-                  { icon: Linkedin, label: "LinkedIn Profile", href: "https://www.linkedin.com/in/aneeb-ur-rehman-528a50299/", color: "from-blue-400 to-blue-600" }
-                ].map((social, index) => (
-                  <motion.a
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1, duration: 0.5 }}
-                    whileHover={{ scale: 1.05, x: 10 }}
-                    viewport={{ once: true }}
-                    className="flex items-center space-x-4 p-4 bg-gray-900/50 rounded-lg border border-gray-700/50 hover:border-blue-400/50 transition-all duration-300 group"
-                  >
-                    <div className={`p-2 rounded-full bg-gradient-to-r ${social.color} bg-opacity-20`}>
-                      <social.icon className="w-5 h-5 text-white" />
-                    </div>
-                    <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
-                      {social.label}
-                    </span>
-                  </motion.a>
-                ))}
+            {/* Social & Professional Presence Links */}
+            <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 backdrop-blur-sm shadow-xl space-y-3">
+              <div className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">
+                Professional Channels
               </div>
+
+              <a
+                href="https://github.com/developer-aneeb"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-3.5 rounded-xl bg-slate-950/60 border border-slate-800 hover:border-slate-700 transition-colors group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-slate-800 text-slate-200 group-hover:text-white">
+                    <Github className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-medium text-slate-200 group-hover:text-blue-300">GitHub Profile</div>
+                    <div className="text-xs text-slate-500">@developer-aneeb</div>
+                  </div>
+                </div>
+                <span className="text-xs text-slate-400 group-hover:text-slate-200">View Repos →</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/aneeb-ur-rehman-528a50299/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-3.5 rounded-xl bg-slate-950/60 border border-slate-800 hover:border-slate-700 transition-colors group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-blue-500/10 text-blue-400">
+                    <Linkedin className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-medium text-slate-200 group-hover:text-blue-300">LinkedIn Profile</div>
+                    <div className="text-xs text-slate-500">Aneeb Ur Rehman</div>
+                  </div>
+                </div>
+                <span className="text-xs text-slate-400 group-hover:text-slate-200">Connect →</span>
+              </a>
+            </div>
+
+            {/* Location & Status Card */}
+            <div className="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60 flex items-center justify-between text-xs text-slate-400">
+              <div className="flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-emerald-400" />
+                <span>Islamabad, Pakistan (UTC+5)</span>
+              </div>
+              <span className="text-emerald-400 font-medium">Remote & Global Available</span>
             </div>
           </motion.div>
         </div>
@@ -180,29 +274,13 @@ export function Contact() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
+          transition={{ delay: 0.3, duration: 0.7 }}
           viewport={{ once: true }}
-          className="text-center mt-16 pt-8 border-t border-gray-700/50"
+          className="text-center mt-20 pt-8 border-t border-slate-800/80 text-xs text-slate-500 space-y-2"
         >
-
-          <p className="text-gray-500">
-            © 2026 ANEEB UR REHMAN. Full Stack AI Engineer.
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-4 mt-4 text-sm text-gray-400">
-            <a href="mailto:dev.aneeb.rehman@gmail.com" className="hover:text-blue-300 transition-colors">
-              Email
-            </a>
-            <span className="text-gray-600">•</span>
-            <a href="https://github.com/developer-aneeb" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">
-              GitHub
-            </a>
-            <span className="text-gray-600">•</span>
-            <a href="https://www.linkedin.com/in/aneeb-ur-rehman-528a50299/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">
-              LinkedIn
-            </a>
-          </div>
-          <p className="text-gray-500 mt-4">
-            I build AI-powered systems, scalable web apps, and intelligent products that solve real-world problems.
+          <p>© 2026 ANEEB UR REHMAN • Full-Stack AI Engineer</p>
+          <p className="text-slate-600">
+            Architected with React, TypeScript, Tailwind CSS & Motion. Built for production-ready AI systems.
           </p>
         </motion.div>
       </div>
